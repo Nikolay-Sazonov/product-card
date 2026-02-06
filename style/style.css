@@ -34,7 +34,7 @@
 }
 
 
-.product-card-mousse {
+.product-card {
   width: 340px;
   height: 573px;
   background: #F7F7FA;
@@ -67,7 +67,7 @@
   color: #515076;
 }
 .product-card-mousse__composition {
-  margin: 10px 25px;
+  margin: 0px 25px;
   padding-left: 0%;
 }
 .product-card-mousse__compound {
@@ -75,8 +75,9 @@
   font-size: 13px;
   line-height: 13px;
   color: #515076;
+  margin: 5px 25px ;
 }
-.product-card-mousse__iten {
+.product-card-mousse__item {
   font-weight: 400;
   font-size: 13px;
   padding-top: 10px;
@@ -105,11 +106,6 @@
 }
 
 
-.product-card-mask {
-  width: 340px;
-  height: 573px;
-  background: #F7F7FA;
-}
 .product-card-mask__img {
     display: block;
   width: 290px;
@@ -138,7 +134,7 @@
   color: #515076;
 }
 .product-card-mask__composition {
-  margin: 10px 25px;
+  margin: 0px 25px;
   padding-left: 0%;
 }
 .product-card-mask__compound {
@@ -146,8 +142,9 @@
   font-size: 13px;
   line-height: 13px;
   color: #515076;
+  margin: 5px 25px;
 }
-.product-card-mask__iten {
+.product-card-mask__item {
   font-weight: 400;
   font-size: 13px;
   padding-top: 10px;
@@ -176,11 +173,6 @@
 }
 
 
-.product-card-gel {
-  width: 340px;
-  height: 573px;
-  background: #F7F7FA;
-}
 .product-card-gel__img {
   display: block;
   width: 290px;
@@ -209,7 +201,7 @@
   color: #515076;
 }
 .product-card-gel__composition {
-  margin: 10px 25px;
+  margin: 0px 25px;
   padding-left: 0%;
 }
 .product-card-gel__compound {
@@ -217,8 +209,9 @@
   font-size: 13px;
   line-height: 13px;
   color: #515076;
+  margin: 5px 25px;
 }
-.product-card-gel__iten {
+.product-card-gel__item {
   font-weight: 400;
   font-size: 13px;
   padding-top: 10px;
@@ -281,7 +274,7 @@
   color: #515076;
 }
 .product-card-gift-set-one__composition {
-  margin: 10px 25px;
+  margin: 0px 25px;
   padding-left: 0%;
 }
 .product-card-gift-set-one__compound {
@@ -289,8 +282,9 @@
   font-size: 13px;
   line-height: 13px;
   color: #515076;
+  margin: 5px 25px;
 }
-.product-card-gift-set-one__iten {
+.product-card-gift-set-one__item {
   font-weight: 400;
   font-size: 13px;
   padding-top: 10px;
@@ -353,7 +347,7 @@
   color: #515076;
 }
 .product-card-gift-set-five__composition {
-  margin: 10px 25px;
+  margin: 0px 25px;
   padding-left: 0%;
 }
 .product-card-gift-set-five__compound {
@@ -361,8 +355,9 @@
   font-size: 13px;
   line-height: 13px;
   color: #515076;
+  margin: 5px 25px;
 }
-.product-card-gift-set-five__iten {
+.product-card-gift-set-five__item {
   font-weight: 400;
   font-size: 13px;
   padding-top: 10px;
