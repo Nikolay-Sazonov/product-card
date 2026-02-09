@@ -1,0 +1,131 @@
+* {
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+
+.product-card__title {
+  position: absolute;
+  width: 846px;
+  height: 78px;
+  left: 217px;
+  top: 220px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 70px;
+  color: #515076;
+}
+
+.product-card__img-fon {
+  width: 790px;
+  height: 697px;
+  top: 0;
+  left: 85px;
+  position: absolute;
+}
+
+.product-card-wrapper {
+  width: 1110px;
+  height: 1191px;
+  position: absolute;
+  top: 408px;
+  left: 85px;
+  border: 1px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 340px;
+  height: 573px;
+  background: #F7F7FA;
+}
+
+.product-card__img {
+  display: block;
+  width: 290px;
+  margin: 25px;
+}
+
+.product-card__normal-skin {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 15px 25px ;
+  text-transform: uppercase;
+  color: #A5A3B9;
+}
+
+.product-card__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 15px 25px ;
+  color: #515076;
+}
+
+.product-card__descr {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 15px 25px ;
+  color: #515076;
+}
+
+.product-card__composition {
+  margin: 0px 25px;
+  padding-left: 0%;
+}
+
+.product-card__compound {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  color: #515076;
+  margin: 5px 25px ;
+}
+
+.product-card__item {
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 10px;
+  margin: 0px 15px;
+  line-height: 13px;
+  color: #515076;
+}
+
+.product-card__price-wrapper {
+  margin: 30px 25px ;
+  display: flex;
+  position: relative;
+}
+
+.product-card__price-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #515076;
+}
+
+.product-card__price {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 0px;
+  color: #515076;
+}
+
+.product-card-gift-set-one {
+  width: 340px;
+  height: 573px;
+  background: #F7F7FA;
+  margin: 0px 0px 0px 177px;
+}
+
+.product-card-gift-set-five {
+  width: 340px;
+  height: 573px;
+  background: #F7F7FA;
+  margin: 0px 177px 0px 0px;
+}
