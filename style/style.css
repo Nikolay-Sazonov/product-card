@@ -1,6 +1,43 @@
-*{
+* {
   font-family: 'Montserrat';
   box-sizing: border-box;
+}
+
+.repaint-fon {
+  left: 998px;
+  top: 346px;
+  width: 200px;
+  height: 60px; 
+  position: absolute;
+  font-size: 20px;
+  background-color: #12eeb7;
+}
+
+.active {
+  background-color: #0817ee;
+}
+
+.recolor-card-all {
+  width: 200px;
+  height: 60px;
+  left: 998px;
+  position: absolute;
+}
+
+.recolor-card {
+  width: 200px;
+  height: 60px;
+  left: 998px;
+  top: 70px;
+  position: absolute;
+}
+
+.transition-google {
+  width: 200px;
+  height: 60px;
+  left: 998px;
+  top: 132px;
+  position: absolute;
 }
 
 .product-card__title {
@@ -14,6 +51,7 @@
   line-height: 70px;
   color: #515076;
 }
+
 .product-card__img-fon {
   width: 790px;
   height: 697px;
@@ -21,6 +59,7 @@
   left: 85px;
   position: absolute;
 }
+
 .product-card-wrapper {
   width: 1110px;
   height: 1191px;
@@ -33,17 +72,18 @@
   flex-wrap: wrap;
 }
 
-
 .product-card {
   width: 340px;
   height: 573px;
   background: #F7F7FA;
 }
+
 .product-card__img {
   display: block;
   width: 290px;
   margin: 25px;
 }
+
 .product-card__normal-skin {
   font-weight: 400;
   font-size: 12px;
@@ -52,6 +92,7 @@
   text-transform: uppercase;
   color: #A5A3B9;
 }
+
 .product-card__subtitle {
   font-weight: 700;
   font-size: 20px;
@@ -59,6 +100,7 @@
   margin: 15px 25px ;
   color: #515076;
 }
+
 .product-card__descr {
   font-weight: 400;
   font-size: 13px;
@@ -66,10 +108,12 @@
   margin: 15px 25px ;
   color: #515076;
 }
+
 .product-card__composition {
   margin: 0px 25px;
   padding-left: 0%;
 }
+
 .product-card__compound {
   font-weight: 400;
   font-size: 13px;
@@ -77,6 +121,7 @@
   color: #515076;
   margin: 5px 25px ;
 }
+
 .product-card__item {
   font-weight: 400;
   font-size: 13px;
@@ -85,17 +130,20 @@
   line-height: 13px;
   color: #515076;
 }
+
 .product-card__price-wrapper {
   margin: 30px 25px ;
   display: flex;
   position: relative;
 }
+
 .product-card__price-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #515076;
 }
+
 .product-card__price {
   font-weight: 400;
   font-size: 20px;
