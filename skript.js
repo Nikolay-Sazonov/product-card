@@ -1,17 +1,17 @@
 // лекция
-const theFirstCardRecolorButton = document.getElementById('recolor-the-first-card-button');
+const firstCardRecolorButton = document.getElementById('recolor-the-first-card-button');
 const firstProductCard = document.querySelector('.product-card');
 const greenHashColor = '#00ff0d';
 
-theFirstCardRecolorButton.addEventListener('click', () => {
+firstCardRecolorButton.addEventListener('click', () => {
   firstProductCard.style.backgroundColor = greenHashColor;
 });
 
 const productCards = document.querySelectorAll('.product-card');
-const theAllCardRecolorButton = document.getElementById('recolor-the-all-card-button');
+const allCardRecolorButton = document.getElementById('recolor-the-all-card-button');
 const yellowHashColor = '#e2d520';
 
-theAllCardRecolorButton.addEventListener('click', () => {
+allCardRecolorButton.addEventListener('click', () => {
   productCards.forEach(card => {
     card.style.backgroundColor = yellowHashColor;
   });
@@ -24,19 +24,19 @@ function openGoogle() {
   const answer = confirm ('Вы действительно хотите перейти на сайт Google');
   if (answer) {
     window.open('https://www.google.com/');
-  }else {
+  } else {
     console.log('переход отменен');
   }
 };
 
 // Домашнее задание
 const textTitle = document.querySelector('.product-card__title');
-  textTitle.addEventListener('mouseover', ()=>{
+  textTitle.addEventListener('mouseover', () => {
     console.log('было непросто');
   });
 
 const recolorButton = document.getElementById('recolor-button');
 
-recolorButton.addEventListener('click',  () => {
+recolorButton.addEventListener('click', () => {
   recolorButton.classList.toggle('active');
 });
