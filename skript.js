@@ -1,5 +1,5 @@
 // лекция
-const firstCardRecolorButton = document.getElementById('recolor-the-first-card-button');
+const firstCardRecolorButton = document.getElementById('recolor-first-card-button');
 const firstProductCard = document.querySelector('.product-card');
 const greenHashColor = '#00ff0d';
 
@@ -8,7 +8,7 @@ firstCardRecolorButton.addEventListener('click', () => {
 });
 
 const productCards = document.querySelectorAll('.product-card');
-const allCardRecolorButton = document.getElementById('recolor-the-all-card-button');
+const allCardRecolorButton = document.getElementById('recolor-all-card-button');
 const yellowHashColor = '#e2d520';
 
 allCardRecolorButton.addEventListener('click', () => {
@@ -26,14 +26,14 @@ function openGoogle() {
     window.open('https://www.google.com/');
   } else {
     console.log('переход отменен');
-  }
+  };
 };
 
 // Домашнее задание
 const textTitle = document.querySelector('.product-card__title');
-  textTitle.addEventListener('mouseover', () => {
-    console.log('было непросто');
-  });
+textTitle.addEventListener('mouseover', () => {
+  console.log('было непросто');
+});
 
 const recolorButton = document.getElementById('recolor-button');
 
