@@ -7,7 +7,6 @@ showTemperature('Иркутск', '-25');
 
 // Задание 4: Создание функции сравнения.
 const LIGHT_SPEED = 299792;
-const speed = 2919222;
 
 const comparisonSpeed = (speed) => {
   if (LIGHT_SPEED > speed) {
@@ -19,7 +18,7 @@ const comparisonSpeed = (speed) => {
   }
 };
 
-comparisonSpeed ();
+comparisonSpeed (2919222);
 
 // Задание 5: Создание функции подсчета.
 const product = 'Велосипед';
