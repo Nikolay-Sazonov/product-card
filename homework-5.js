@@ -1,15 +1,15 @@
 //  Задание 3: Создание функции "температура воздуха в Иркутске".
-const readingTemperature = (city, temperature) => {
+const showTemperature = (city, temperature) => {
 console.log (`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`);
 };
 
-readingTemperature('Иркутск', '-25');
+showTemperature('Иркутск', '-25');
 
 // Задание 4: Создание функции сравнения.
 const LIGHT_SPEED = 299792;
 const speed = 2919222;
 
-const comparisonSpeed = () => {
+const comparisonSpeed = (speed) => {
   if (LIGHT_SPEED > speed) {
     console.log('Субсветовая скорость');
   } else if (LIGHT_SPEED === speed) {
