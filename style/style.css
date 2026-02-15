@@ -3,6 +3,43 @@
   box-sizing: border-box;
 }
 
+.repaint-fon {
+  left: 998px;
+  top: 346px;
+  width: 200px;
+  height: 60px; 
+  position: absolute;
+  font-size: 20px;
+  background-color: #12eeb7;
+}
+
+.active {
+  background-color: #0817ee;
+}
+
+.recolor-card-all {
+  width: 200px;
+  height: 60px;
+  left: 998px;
+  position: absolute;
+}
+
+.recolor-card {
+  width: 200px;
+  height: 60px;
+  left: 998px;
+  top: 70px;
+  position: absolute;
+}
+
+.transition-google {
+  width: 200px;
+  height: 60px;
+  left: 998px;
+  top: 132px;
+  position: absolute;
+}
+
 .product-card__title {
   position: absolute;
   width: 846px;
