@@ -4,7 +4,7 @@
 }
 
 .repaint-fon {
-  left: 998px;
+  left: 975px;
   top: 346px;
   width: 200px;
   height: 60px; 
@@ -20,14 +20,14 @@
 .recolor-card-all {
   width: 200px;
   height: 60px;
-  left: 998px;
+  left: 975px;
   position: absolute;
 }
 
 .recolor-card {
   width: 200px;
   height: 60px;
-  left: 998px;
+  left: 975px;
   top: 70px;
   position: absolute;
 }
@@ -35,7 +35,7 @@
 .transition-google {
   width: 200px;
   height: 60px;
-  left: 998px;
+  left: 975px;
   top: 132px;
   position: absolute;
 }
@@ -45,7 +45,7 @@
   width: 846px;
   height: 78px;
   left: 217px;
-  top: 220px;
+  top: 200px;
   font-weight: 400;
   font-size: 70px;
   line-height: 70px;
@@ -56,8 +56,9 @@
   width: 790px;
   height: 697px;
   top: 0;
-  left: 85px;
+  left: 105px;
   position: absolute;
+  z-index: -1;
 }
 
 .product-card-wrapper {
@@ -68,27 +69,27 @@
   left: 85px;
   border: 1px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  column-gap: 25px;
 }
 
 .product-card {
   width: 340px;
   height: 573px;
   background: #F7F7FA;
+  padding: 25px;
 }
 
 .product-card__img {
   display: block;
   width: 290px;
-  margin: 25px;
 }
 
 .product-card__normal-skin {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  margin: 15px 25px ;
   text-transform: uppercase;
   color: #A5A3B9;
 }
@@ -97,7 +98,6 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  margin: 15px 25px ;
   color: #515076;
 }
 
@@ -105,13 +105,12 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 13px;
-  margin: 15px 25px ;
   color: #515076;
 }
 
 .product-card__composition {
-  margin: 0px 25px;
-  padding-left: 0%;
+  margin: 0 auto;
+  padding-left: 15px;
 }
 
 .product-card__compound {
@@ -119,22 +118,22 @@
   font-size: 13px;
   line-height: 13px;
   color: #515076;
-  margin: 5px 25px ;
+  margin-top: 50px;
 }
 
 .product-card__item {
   font-weight: 400;
   font-size: 13px;
   padding-top: 10px;
-  margin: 0px 15px;
   line-height: 13px;
   color: #515076;
 }
 
 .product-card__price-wrapper {
-  margin: 30px 25px ;
+  padding-top: 30px;
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .product-card__price-text {
@@ -148,8 +147,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  position: absolute;
-  right: 0px;
   color: #515076;
 }
 
@@ -157,12 +154,11 @@
   width: 340px;
   height: 573px;
   background: #F7F7FA;
-  margin: 0px 0px 0px 177px;
 }
 
 .product-card-gift-set-five {
   width: 340px;
   height: 573px;
   background: #F7F7FA;
-  margin: 0px 177px 0px 0px;
 }
+
