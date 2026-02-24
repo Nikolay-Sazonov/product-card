@@ -118,11 +118,16 @@ console.log(allBooks);
 
 // Задание 10: Создать функцию, которая принимает массив сущностей
 
-const getRerityInfomation = allBooks.map( book => {
+const rerityBooks = allBooks.map( book => {
   if (book.produced <= 2001) {
-    return {...book, isRare : true};
+    return {
+    ...book,
+    isRare : true
+    };
   } else {
-    return{...book, isRare : false};
+    return {
+    ...book,
+    isRare : false};
   }
 });
 
