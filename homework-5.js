@@ -1,11 +1,12 @@
-//  Задание 3: Создание функции "температура воздуха в Иркутске".
+// //  Задание 3: Создание функции "температура воздуха в Иркутске".
 const showTemperature = (city, temperature) => {
 console.log (`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`);
 };
 
 showTemperature('Иркутск', '-25');
 
-// Задание 4: Создание функции сравнения.
+// // Задание 4: Создание функции сравнения.
+
 const LIGHT_SPEED = 299792;
 
 const comparisonSpeed = (speed) => {
@@ -20,7 +21,8 @@ const comparisonSpeed = (speed) => {
 
 comparisonSpeed (2919222);
 
-// Задание 5: Создание функции подсчета.
+// // Задание 5: Создание функции подсчета.
+
 const product = 'Велосипед';
 let price = 68346;
 
@@ -34,7 +36,8 @@ const buyProduct = (finance ) => {
 
 buyProduct(700000);
 
-// Задание 6: Создание своей функции.
+// // Задание 6: Создание своей функции.
+
 let bank = 900;
 
 const shoppingGrocery = (milk = 100, shawarma = 50, juice = 300) => {
@@ -49,12 +52,9 @@ const shoppingGrocery = (milk = 100, shawarma = 50, juice = 300) => {
 
 shoppingGrocery();
 
-// Задание 7: Создание переменной.
+// // Задание 7: Создание переменной.
 
 let footballClub = "CSKA";
 const G = 9.81; 
 let climate = "cold";
 
-console.log(footballClub);
-console.log(G);
-console.log(climate);
