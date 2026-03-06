@@ -5,7 +5,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const filtrationNumbers = numbers.filter(number => 
   number >=5 
-)
+);
 
 // Задание 3. Создать массив строк и воспользоваться методом .includes
 
@@ -28,7 +28,7 @@ const selectionCarparts = carparts.includes('генератор');
 
 const getInvertedArray = (array) => {
   console.log(array.reverse())
-}
+};
 
 
 // Уровень 2
@@ -69,8 +69,8 @@ comment.email
 const newArrayMail = commentsSocialMedia.reduce((acc, comment) => {
   acc.push(comment.email);
   return acc;
-}, [])
+}, []);
 
 // Задание 12. Перебрав массив с задания №11, привести его к строке.
 
-const newArrayMailStr = newArrayMail.join()
+const newArrayMailStr = newArrayMail.join();
