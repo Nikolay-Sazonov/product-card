@@ -3,8 +3,6 @@ const showTemperature = (city, temperature) => {
 console.log (`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`);
 };
 
-showTemperature('Иркутск', '-25');
-
 // // Задание 4: Создание функции сравнения.
 
 const LIGHT_SPEED = 299792;
@@ -19,8 +17,6 @@ const comparisonSpeed = (speed) => {
   }
 };
 
-comparisonSpeed (2919222);
-
 // // Задание 5: Создание функции подсчета.
 
 const product = 'Велосипед';
@@ -33,8 +29,6 @@ const buyProduct = (finance ) => {
     console.log(`Вам не хватает ${price - finance}. Пополните баланс.`);
   }
 };
-
-buyProduct(700000);
 
 // // Задание 6: Создание своей функции.
 
@@ -49,8 +43,6 @@ const shoppingGrocery = (milk = 100, shawarma = 50, juice = 300) => {
     console.log(`Недостаточно средств в размере ${(milk + shawarma + juice)- bank}. Необходимо пополнить баланс `);
   }
 };
-
-shoppingGrocery();
 
 // // Задание 7: Создание переменной.
 
