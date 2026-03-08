@@ -79,4 +79,4 @@ const getNewArrayMail = commentsSocialMedia.reduce((acc, comment) => {
 
 // Задание 12. Перебрав массив с задания №11, привести его к строке.
 
-const getNewArrayMailStr = newArrayMail.join();
+const getNewArrayMailStr = getNewArrayMail.join();
