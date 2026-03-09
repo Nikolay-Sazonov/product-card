@@ -7,7 +7,7 @@ console.log (`Сейчас в ${city} температура — ${temperature} 
 
 const LIGHT_SPEED = 299792;
 
-const comparisonSpeed = (speed) => {
+const compareSpeed = (speed) => {
   if (LIGHT_SPEED > speed) {
     console.log('Субсветовая скорость');
   } else if (LIGHT_SPEED === speed) {
@@ -16,6 +16,7 @@ const comparisonSpeed = (speed) => {
     console.log('Сверхсветовая скорость');
   }
 };
+compareSpeed();
 
 // // Задание 5: Создание функции подсчета.
 
@@ -29,6 +30,7 @@ const buyProduct = (finance ) => {
     console.log(`Вам не хватает ${price - finance}. Пополните баланс.`);
   }
 };
+buyProduct();
 
 // // Задание 6: Создание своей функции.
 
@@ -43,7 +45,7 @@ const shoppingGrocery = (milk = 100, shawarma = 50, juice = 300) => {
     console.log(`Недостаточно средств в размере ${(milk + shawarma + juice)- bank}. Необходимо пополнить баланс `);
   }
 };
-
+shoppingGrocery();
 // // Задание 7: Создание переменной.
 
 let footballClub = "CSKA";
