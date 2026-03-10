@@ -42,7 +42,7 @@ const filteredCommentsByCom = commentsSocialMedia.filter(comment =>
 
 // Задание 8. Перебрать массив
 
-const newFilteredCommentsByCom = commentsSocialMedia.map(comment => {
+const CommentsByPostId = commentsSocialMedia.map(comment => {
   return {
     ...comment,
     postId: comment.id <= 5 ? 2 : 1
@@ -51,14 +51,14 @@ const newFilteredCommentsByCom = commentsSocialMedia.map(comment => {
 
 // Задание 9. Перебрать массив, что бы объекты состояли только из айди и имени
 
-const newArray = commentsSocialMedia.map(comment => ({
+const arrayIdName = commentsSocialMedia.map(comment => ({
     id : comment.id,
     name : comment.name,
 }));
 
 // Задание 10. Перебираем массив, добавляем объектам свойство isInvalid
 
-const newComments = commentsSocialMedia.map(comment => ({
+const commentsWithValidation = commentsSocialMedia.map(comment => ({
   ...comment,
   isInvalid : comment.body.length > 180,
 }));
@@ -66,15 +66,16 @@ const newComments = commentsSocialMedia.map(comment => ({
 
 // Задание 11. Используя метод reduce и map вывести массив почты.
 
-const arrayMail = commentsSocialMedia.map( comment => 
+const commentUserEmailsByMap = commentsSocialMedia.map( comment => 
   comment.email,
 );
 
-const newArrayMail = commentsSocialMedia.reduce((acc, comment) => {
+const commentUserEmailsByReduce = commentsSocialMedia.reduce((acc, comment) => {
   acc.push(comment.email);
   return acc;
-},[]);
+}, []);
 
 // Задание 12. Перебрав массив с задания №11, привести его к строке.
 
-const newArrayMailStr = getNewArrayMail.join();
+const emailsListString = commentUserEmailsByMap.join();
+
