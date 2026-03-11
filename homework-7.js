@@ -42,7 +42,7 @@ const filteredCommentsByCom = commentsSocialMedia.filter(comment =>
 
 // Задание 8. Перебрать массив
 
-const CommentsByPostId = commentsSocialMedia.map(comment => {
+const сommentsByPostId = commentsSocialMedia.map(comment => {
   return {
     ...comment,
     postId: comment.id <= 5 ? 2 : 1
@@ -51,7 +51,7 @@ const CommentsByPostId = commentsSocialMedia.map(comment => {
 
 // Задание 9. Перебрать массив, что бы объекты состояли только из айди и имени
 
-const arrayIdName = commentsSocialMedia.map(comment => ({
+const arrayComentsIdName = commentsSocialMedia.map(comment => ({
     id : comment.id,
     name : comment.name,
 }));
