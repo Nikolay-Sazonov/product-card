@@ -11,8 +11,6 @@ const personalData = {
   maritalStatus:"Женат, есть ребенок"
 };
 
-console.log(personalData);
-
 // Задание 4: Создание объекта с персональными данными..
 
 const car = {
@@ -24,7 +22,6 @@ const car = {
 };
 
 car.owner = personalData;
-console.log(car);
 
 // Задание 5: Создание функции поиска "максимальной скорости" в объекте infomationCar.
 
@@ -42,13 +39,9 @@ const showObjectProperty = (objeсt, key) => {
   console.log(objeсt[key]);
 };
 
-showObjectProperty (personalData, 'city');
-
 // Задание 7: Cоздание массива.
 
 const productList = ["Чай", "Хлеб", "Молоко", "Макароны"];
-
-console.log(productList);
 
 // Задание 8: Cоздание массива состоящий из объектов.
 
@@ -85,7 +78,6 @@ favoriteBooks.push (
     genre : "детектив"
   }
 );
-console.log(favoriteBooks);
 
 // Задание 9: Cоздание массива состоящий из объектов и объединение с массивом из задания №8.
 
@@ -114,13 +106,10 @@ const booksMarvel = [
 ];
  const allBooks = [...favoriteBooks, ...booksMarvel];
  
-console.log(allBooks);
-
 // Задание 10: Создать функцию, которая принимает массив сущностей
 
 const rerityBooks = allBooks.map( book => ({
   ...book,
-  isRare : book.produced <= 2001
+  isRare : book.produced <= 2001 ,
+  
 }));
-
-console.log(rerityBooks);
