@@ -11,10 +11,6 @@ const productDiscription = productCards.reduce((acc,productCard) =>{
 // От 1 до 5" и в зависимости от результата - будет выводить введенное количество. 
 // Должна быть защита от ввода других значений (проверка if).
 
-window.addEventListener('load', () => {
-  productCards.splice(getCardsCount());
-  renderCards(productCards);
-});
 
 function getCardsCount() {
   const count = +prompt("Сколько карточек показать? От 1 до 5)");
@@ -34,9 +30,8 @@ function renderCards() {
     productCardClone.querySelector('.product-card__subtitle').textContent = productCard.title;
     productCardClone.querySelector('.product-card__normal-skin').textContent = productCard.normalSkin;
     productCardClone.querySelector('.product-card__descr').textContent = productCard.description;
-    productCardClone.querySelector('.product-card__compound').textContent = productCard.headerList;
     productCardClone.querySelector('.product-card__price').textContent = productCard.price + " ₽";
-    productCardClone.querySelector('.product-card__img').src = productCard.image;
+    productCardClone.querySelector('.product-card__img').src = `images/${productCard.image}.png`;
     productCardClone.querySelector('.product-card__img').alt = productCard.image;
     productCard.ingredients.forEach(ingredient =>{
       const li = document.createElement('li');
@@ -47,3 +42,8 @@ function renderCards() {
     productCardWrappert.appendChild(productCardClone);
   });
 };
+
+window.addEventListener('load', () => {
+  productCards.splice(getCardsCount());
+  renderCards(productCards);
+});

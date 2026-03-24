@@ -1,10 +1,9 @@
 export const productCards = [
   {
     normalSkin : 'для нормальной кожи',
-    image : 'images/moisturizing-mousse.png', 
+    image : 'moisturizing-mousse', 
     title : 'Увлажняющий мус',
     description : 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
-    headerList : 'Состав',
      ingredients : [
       'активные натуральные комплексы',
       'витамины С, А, РР, В И Е',
@@ -14,10 +13,9 @@ export const productCards = [
   },
   {
     normalSkin : 'для нормальной кожи',
-    image : 'images/moisturizing-mask.png',
+    image : 'moisturizing-mask',
     title : 'Увлажняющий маска',
     description : 'Способствует удерживанию влаги в верхних слоях кожи.',
-    headerList : 'Состав',
     ingredients : [
       'воск',
       'минералы',
@@ -27,10 +25,9 @@ export const productCards = [
   },
   {
     normalSkin : 'для нормальной кожи',
-    image : 'images/cleansing-gel.png',
+    image : 'cleansing-gel',
     title : 'Гель для умывания',
     description : 'Интенсивно очищает, не повреждает защитный барьер кожи.',
-    headerList : 'Состав',
     ingredients : [
       'минералы',
       'витамины С, А, РР, В И Е',
@@ -40,10 +37,9 @@ export const productCards = [
   },
   {
     normalSkin : 'для нормальной кожи',
-    image : 'images/gift-set-one.png',
+    image : 'gift-set-one',
     title : 'Подарочный набор №1',
     description : 'Набор, состоящий из увлажняющего крема и маски.',
-    headerList : 'Состав',
     ingredients : [
       'воски',
       'минералы',
@@ -53,10 +49,9 @@ export const productCards = [
   },
   {
     normalSkin : 'для нормальной кожи',
-    image : 'images/gift-set-five.png',
+    image : 'gift-set-five',
     title : 'Подарочный набор №5',
     description : 'Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.',
-    headerList : 'Состав',
     ingredients : [
       'воски',
       'минералы',
