@@ -33,7 +33,7 @@ function renderCards() {
     productCardClone.querySelector('.product-card__price').textContent = productCard.price + " ₽";
     productCardClone.querySelector('.product-card__img').src = `images/${productCard.image}.png`;
     productCardClone.querySelector('.product-card__img').alt = productCard.image;
-    productCard.ingredients.forEach(ingredient =>{
+    productCard.ingredients.forEach(ingredient => {
       const li = document.createElement('li');
       li.classList.add('product-card__item');
       li.textContent = ingredient;
@@ -45,5 +45,5 @@ function renderCards() {
 
 window.addEventListener('load', () => {
   productCards.splice(getCardsCount());
-  renderCards(productCards);
+  renderCards();
 });
