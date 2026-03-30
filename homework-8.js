@@ -21,11 +21,12 @@ function getCardsCount() {
     return getCardsCount();
 };
 
-function renderCards() {
+
   const productCardWrappert = document.querySelector ('.product-card-wrapper');
   const productCardTemplate = document.querySelector('#product-card-template');
-
-  productCards.forEach(productCard => {
+  
+function renderCards(dataCard) {
+  dataCard.forEach((productCard) => {
     const productCardClone = productCardTemplate.content.cloneNode(true);
     productCardClone.querySelector('.product-card__subtitle').textContent = productCard.title;
     productCardClone.querySelector('.product-card__normal-skin').textContent = productCard.normalSkin;
@@ -44,6 +45,6 @@ function renderCards() {
 };
 
 window.addEventListener('load', () => {
-  productCards.splice(getCardsCount());
-  renderCards();
+  const selectionCards = productCards.splice(0,getCardsCount());
+  renderCards(selectionCards);
 });
