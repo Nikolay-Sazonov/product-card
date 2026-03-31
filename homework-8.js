@@ -2,7 +2,7 @@ import { productCards } from "./cards.js";
  
 // 4. Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
-const productDiscription = productCards.reduce((acc,productCard) =>{
+const productDiscription = productCards.reduce((acc,productCard) => {
   acc.push({[productCard.title]: productCard.description});
   return acc;
 }, []);
@@ -25,8 +25,8 @@ function getCardsCount() {
   const productCardWrappert = document.querySelector ('.product-card-wrapper');
   const productCardTemplate = document.querySelector('#product-card-template');
   
-function renderCards(dataCard) {
-  dataCard.forEach((productCard) => {
+function renderCards(arrayProducts) {
+  arrayProducts.forEach((productCard) => {
     const productCardClone = productCardTemplate.content.cloneNode(true);
     productCardClone.querySelector('.product-card__subtitle').textContent = productCard.title;
     productCardClone.querySelector('.product-card__normal-skin').textContent = productCard.normalSkin;
@@ -45,6 +45,6 @@ function renderCards(dataCard) {
 };
 
 window.addEventListener('load', () => {
-  const selectionCards = productCards.splice(0,getCardsCount());
+  const selectionCards = productCards.splice(0, getCardsCount());
   renderCards(selectionCards);
 });
