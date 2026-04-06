@@ -144,7 +144,6 @@
 }
 
 .product-card__price {
-  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   color: #515076;
@@ -162,3 +161,7 @@
   background: #F7F7FA;
 }
 
+.product-card__basement {
+  width: 1728px;
+  height: 477px;
+}
