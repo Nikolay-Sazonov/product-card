@@ -43,8 +43,9 @@ registrationForm.addEventListener('submit', (event) => {
     user = {
       ...dataReg,
       createdOn: new Date().toLocaleDateString(),
+    
     };
-    console.log(user);
+    console.log({...user, password: btoa(user.password), 'confirm-password': btoa(user.confirm-password)});
     registrationForm.reset();
   } else {
      alert ("Регистрация отклонена, введенный пароль не совпадает, повторите ввод пароля");
