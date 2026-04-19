@@ -25,6 +25,7 @@ closeBtn.addEventListener('click', () => {
 const password = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
 const registrationForm = document.querySelector('.registration-form');
+let user = {};
 
 registrationForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -40,7 +41,7 @@ registrationForm.addEventListener('submit', (event) => {
   let confirmPassword = formData.get('confirm-password');
   if (userPassword === confirmPassword) {
     modal.classList.remove("modal-showed");
-    const user = {
+    user = {
       ...dataReg,
       createdOn: new Date().toLocaleDateString(),
     };
