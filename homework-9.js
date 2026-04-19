@@ -31,7 +31,7 @@ registrationForm.addEventListener('submit', (event) => {
   const formElem = event.target;
   const formData = new FormData (formElem);
   const dataReg = Object.fromEntries(formData.entries());
-  if (!registrationForm.checkVisibility()) {
+  if (!registrationForm.checkValidity()) {
     alert('Некорректно заполнение полей !');
     return;
   };
@@ -40,10 +40,9 @@ registrationForm.addEventListener('submit', (event) => {
   let confirmPassword = formData.get('confirm-password');
   if (userPassword === confirmPassword) {
     modal.classList.remove("modal-showed");
-    user = {
+    const user = {
       ...dataReg,
       createdOn: new Date().toLocaleDateString(),
-    
     };
     console.log({...user, password: btoa(user.password), 'confirm-password': btoa(user.confirm-password)});
     registrationForm.reset();
