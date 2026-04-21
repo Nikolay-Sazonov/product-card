@@ -21,7 +21,6 @@ function getCardsCount() {
     return getCardsCount();
 };
 
-
   const productCardWrappert = document.querySelector ('.product-card-wrapper');
   const productCardTemplate = document.querySelector('#product-card-template');
   

@@ -1,15 +1,31 @@
-* {
-  font-family: 'Montserrat';
+
+  * {font-family: 'Montserrat';
   box-sizing: border-box;
+  margin: 10;
 }
 
-.repaint-fon {
-  left: 975px;
-  top: 346px;
-  width: 200px;
-  height: 60px; 
+body {
+  margin: 0%;
+}
+
+.content {
+  flex: 1;
+  min-height: 1600px;
+  position: relative; 
+  
+}
+
+.all-button {
   position: absolute;
-  font-size: 20px;
+  width: 1111px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  margin-top: 10px;
+}
+.repaint-fon {
+  width: 200px;
+  height: 40px; 
   background-color: #12eeb7;
 }
 
@@ -19,25 +35,17 @@
 
 .recolor-card-all {
   width: 200px;
-  height: 60px;
-  left: 975px;
-  position: absolute;
+  height: 40px;
 }
 
 .recolor-card {
   width: 200px;
-  height: 60px;
-  left: 975px;
-  top: 70px;
-  position: absolute;
+  height: 40px;
 }
 
 .transition-google {
   width: 200px;
-  height: 60px;
-  left: 975px;
-  top: 132px;
-  position: absolute;
+  height: 40px;
 }
 
 .product-card__title {
@@ -63,7 +71,7 @@
 
 .product-card-wrapper {
   width: 1110px;
-  height: 1191px;
+  min-height: 1191px;
   position: absolute;
   top: 408px;
   left: 85px;
@@ -72,6 +80,8 @@
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 25px;
+  /* flex: 1 0 auto; */
+  
 }
 
 .product-card {
@@ -161,7 +171,187 @@
   background: #F7F7FA;
 }
 
-.product-card__basement {
-  width: 1728px;
-  height: 477px;
+.footer {
+  background-color: #3A3A3A;
+  max-height: 477px;
+  width: 100%;
+  flex: 0 0 auto;
+  padding: 85px 80px 28px 80px;
 }
+
+.footer__block {
+  max-width: 1512px;
+  height: 147px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-bottom: 100px;
+}
+
+.footer__title {
+  display: inline-block;
+  color: white;
+  margin: 0;
+  max-width: 409px;
+  height: 87px;
+  width: 100%;
+}
+
+.social-links {
+ display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.logo-title {
+  font-size: 28px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.logo-text {
+  font-size: 18px;
+  color: #FFFFFF; 
+}
+
+.footer__email {
+  color: #FFFFFF;
+  width: 477px;
+  height: 103px;
+  margin-left: -200px;
+}
+
+.email-titel {
+  margin-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center; 
+  margin-top: 0px;
+} 
+
+.footer__form-email {
+  display: flex;
+  width: 100%;
+  min-width:300px;
+  align-items: center;
+  justify-content:center ;
+  gap: 5px;
+  padding: 16px 15px;
+  background: white;
+  border-radius: 8px;
+}
+
+#user-email {
+  flex: 1;
+  min-width: 50px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+
+.subscribe {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 6px; 
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.footer__block-item {
+  max-width: 178px;
+  height: 147px;
+}
+
+.footer__titel-item {
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+.menu-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+ .footer_menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1px;
+  gap: 5px;
+}
+
+.footer__divider {
+  width: 66px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  margin: 33px auto;
+}
+
+.footer__copyright {
+  width: 376px;
+  height: 22px;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.modal {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#0000006f;
+  backdrop-filter: blur(2px);
+  position:fixed;
+  z-index: 1000;
+}
+
+.modal-showed {
+  display: block;
+}
+
+.modal-form {
+  margin: 15% auto;
+  min-height: 300px;
+  width: 400px;
+  background-color:#ffffff;
+  border-radius: 5px;
+}
+
+.close-button {
+  cursor: pointer;
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 5px;
+  margin: 5px 20px 10px 20px;
+  padding: 5px 5px 15px 5px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-left: 110px;
+  padding: 10px 0 0 0;
+}
+
+.big-btn {
+margin: 0 100px;
+}
+
