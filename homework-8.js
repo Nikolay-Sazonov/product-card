@@ -24,8 +24,8 @@ function getCardsCount() {
   const productCardWrappert = document.querySelector ('.product-card-wrapper');
   const productCardTemplate = document.querySelector('#product-card-template');
   
-function renderCards(arrayProducts) {
-  arrayProducts.forEach((productCard) => {
+function renderCards(productsArray) {
+  productsArray.forEach((productCard) => {
     const productCardClone = productCardTemplate.content.cloneNode(true);
     productCardClone.querySelector('.product-card__subtitle').textContent = productCard.title;
     productCardClone.querySelector('.product-card__normal-skin').textContent = productCard.normalSkin;
