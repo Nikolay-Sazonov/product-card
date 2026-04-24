@@ -1,54 +1,75 @@
-const emailForm = document.querySelector('#form-email');
+import modal from './modal.js';
+import {Form} from './form.js';
+// Задание3. Создать структуру наследуемости классов
+class Phone {
+  constructor(brend, battery) {
+    this.brend = brend;
+    this.battery = battery;
+  };
 
-emailForm.addEventListener ('submit', (event) => {
+  batteryСondition() {
+    console.log(`На телефоне бренда ${this.brend} ёмкость аккумулятора ${this.battery}%.`);
+  };
+};
+
+class BuyPhone extends Phone {
+  constructor(brend, battery, benefit) {
+    super(brend, battery);
+    this.benefit = benefit;
+  };
+
+  evaluationPhone() {
+    console.log(`На телефоне бренда ${this.brend} ёмкость аккумулятора ${this.battery}%. Состояние ${this.benefit}`)
+  };
+};
+
+const huawai = new BuyPhone('Huawei', 85, 'Нормальное');
+
+huawai.evaluationPhone();
+
+//ДЗ 10 Задание 4, 5.
+
+const emailForm = new Form('form-email');
+
+emailForm.formID.addEventListener('submit', (event) => {
   event.preventDefault();
-  const form = event.target;
-  const formData = new FormData (form);
-  const data = Object.fromEntries(formData.entries());
+  emailForm.checkFormValidity;
+  const data = emailForm.getElements();
   console.log(data);
 });
 
-// Задание 5,6. Создание модального окна и формы внутри него.
+// 
 
 const openBtn = document.querySelector('#registration-button');
 const closeBtn = document.querySelector('.close-button');
-const modal = document.querySelector('.modal');
-
-openBtn.addEventListener('click', () => {
-  modal.classList.add('modal-showed');
-});
-
-closeBtn.addEventListener('click', () => {
-  modal.classList.remove('modal-showed');
-});
-
+const modalId = document.querySelector('#modal');
 const password = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
-const registrationForm = document.querySelector('.registration-form');
 let user = {};
 
-registrationForm.addEventListener('submit', (event) => {
+const modalWindow = new modal(modalId, closeBtn);
+openBtn.addEventListener('click', () => {
+  modalWindow.openModal();
+});
+
+modalWindow.closeModalIcon();
+
+const registrationForm = new Form('registration-form');
+registrationForm.formID.addEventListener('submit', (event) => {
   event.preventDefault();
-  const formElem = event.target;
-  const formData = new FormData (formElem);
-  const dataReg = Object.fromEntries(formData.entries());
-  if (!registrationForm.checkValidity()) {
-    alert('Некорректно заполнение полей !');
-    return;
-  };
-  
-  let userPassword = formData.get('password');
-  let confirmPassword = formData.get('confirm-password');
-  if (userPassword === confirmPassword) {
-    modal.classList.remove("modal-showed");
-    user = {
-      ...dataReg,
-      createdOn: new Date().toLocaleDateString(),
-    };
-    console.log({...user, password: btoa(user.password), 'confirm-password': btoa(user.confirm-password)});
-    registrationForm.reset();
+  registrationForm.checkFormValidity();
+  const formElem = registrationForm.getElements();
+  if (formElem.password === formElem['confirm-password']) {
+    registrationForm.createdOn = new Date().toLocaleDateString();
+    const {...userData} = formElem;
+    user = {...userData};
+    delete user['confirm-password'];
+    registrationForm.user = user;
+    console.log(registrationForm.user);
+    registrationForm.resetFormData();
+    modalWindow.closeModal();
   } else {
-     alert ("Регистрация отклонена, введенный пароль не совпадает, повторите ввод пароля");
+     alert ('Регистрация отклонена, введенный пароль не совпадает, повторите ввод пароля');
      return;
   };
 });
