@@ -3,9 +3,9 @@
  айди модального окна.*/
 
 export default class Modal {
-  constructor(modal, closeBtnModal) {
+  constructor(modal) {
     this.modal = modal;
-    this.closeBtnModal = closeBtnModal;
+    this.closeModalIcon();
   };
 
   modalFormOpen() {
@@ -21,7 +21,8 @@ export default class Modal {
   };
   
   closeModalIcon() {
-    this.closeBtnModal.addEventListener('click', () => {
+    const closeBtn = this.modal.querySelector('.close-button');
+    closeBtn.addEventListener('click', () => {
       this.closeModal();
     });
   };

@@ -33,26 +33,21 @@ const emailForm = new Form('form-email');
 
 emailForm.formID.addEventListener('submit', (event) => {
   event.preventDefault();
-  emailForm.checkFormValidity;
+  emailForm.checkFormValidity();
   const data = emailForm.getElements();
   console.log(data);
 });
 
-// 
-
 const openBtn = document.querySelector('#registration-button');
-const closeBtn = document.querySelector('.close-button');
 const modalId = document.querySelector('#modal');
 const password = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
 let user = {};
 
-const modalWindow = new modal(modalId, closeBtn);
+const modalWindow = new modal(modalId);
 openBtn.addEventListener('click', () => {
   modalWindow.openModal();
 });
-
-modalWindow.closeModalIcon();
 
 const registrationForm = new Form('registration-form');
 registrationForm.formID.addEventListener('submit', (event) => {
@@ -69,7 +64,7 @@ registrationForm.formID.addEventListener('submit', (event) => {
     registrationForm.resetFormData();
     modalWindow.closeModal();
   } else {
-     alert ('Регистрация отклонена, введенный пароль не совпадает, повторите ввод пароля');
-     return;
+    alert ('Регистрация отклонена, введенный пароль не совпадает, повторите ввод пароля');
+    return;
   };
 });
