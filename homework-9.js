@@ -25,7 +25,6 @@ class BuyPhone extends Phone {
 
 const huawai = new BuyPhone('Huawei', 85, 'Нормальное');
 
-huawai.evaluationPhone();
 
 //ДЗ 10 Задание 4, 5.
 
