@@ -16,7 +16,7 @@ const compareSpeed = (speed) => {
     console.log('Сверхсветовая скорость');
   }
 };
-compareSpeed();
+
 
 // // Задание 5: Создание функции подсчета.
 
@@ -30,7 +30,7 @@ const buyProduct = (finance ) => {
     console.log(`Вам не хватает ${price - finance}. Пополните баланс.`);
   }
 };
-buyProduct();
+
 
 // // Задание 6: Создание своей функции.
 
@@ -45,7 +45,7 @@ const shoppingGrocery = (milk = 100, shawarma = 50, juice = 300) => {
     console.log(`Недостаточно средств в размере ${(milk + shawarma + juice)- bank}. Необходимо пополнить баланс `);
   }
 };
-shoppingGrocery();
+
 // // Задание 7: Создание переменной.
 
 let footballClub = "CSKA";
