@@ -1,0 +1,63 @@
+* {
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  margin: 10;
+}
+
+.information-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #08628f;
+  width: 700px;
+  height: 200px;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+.user-card {
+  border-radius: 8px;
+  width: 200px;
+  height: 235px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #7fffd4;
+}
+
+.user-data__wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 25%;
+  left: 15%;
+  column-gap: 25px;
+  width: 790px;
+  height: 500px;
+}
+
+.delete-card {
+    border-radius: 10px;
+    background-color: #4d5a60;
+}
+
+.all-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  left: 250px;
+  width: 600px;
+}
+
+
+
+.get-card-all, .delete-card-all {
+  border-radius: 6px;
+  height: 40px;
+  background-color: rgb(132, 222, 53);
+}

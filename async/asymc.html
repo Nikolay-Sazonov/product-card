@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./asymc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
+  <title>User data</title>
+</head>
+<body>
+  <div class="all-button">
+  <button id="delete-all-user-card-button" class="delete-card-all">Удалить все карточки</button>
+  <button id="get-all-user-card-button" class="get-card-all">Получить все карточки</button>
+  </div>
+  <div class="information-line">
+    <p class="information-line__text">Данные загружаются!</p>
+  </div>
+  <div class="user-data__wrapper"></div>
+  <template class="user-data__template" id="template">
+    <div class="user-card">
+      <p class="user_id"></p>
+      <p class="user_name">Имя:</p>
+      <p class="user_surname">Фамилия:</p>
+      <p class="user_age">Возраст</p>
+      <p class="user_email">Электронная почта:</p>
+      <button class="delete-card">Удалить карточку</button>
+    </div>
+  </template>
+  <p class="error-text"></p>
+</body>
+<script src="./async.js"></script>
+</html>
