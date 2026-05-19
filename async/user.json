@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "name": "Николай",
+    "surname": "Сазонов",
+    "age": 26,
+    "email": "Nikolai@mail.ru"
+  },
+
+  {
+    "id": 1,
+    "name": "Иван",
+    "surname": "Сергеев",
+    "age": 49,
+    "email": "vanes-SE@mail.ru"
+  },
+
+  {
+    "id": 2,
+    "name": "Дарья",
+    "surname": "Сазонова",
+    "age": 27,
+    "email": "DA_SA@yandex.ru"
+  },
+
+  {
+    "id": 3,
+    "name": "Максим",
+    "surname": "Быргов",
+    "age": 35,
+    "email": "GSpro@mail.ru"
+  },
+
+  {
+    "id": 4,
+    "name": "Виктор",
+    "surname": "Удачный",
+    "age": 16,
+    "email": "robot@mail.ru"
+  }
+] 
